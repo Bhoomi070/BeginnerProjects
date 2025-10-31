@@ -17,8 +17,13 @@ $ git clone https://github.com/VickyTheRocker/BeginnerProjects.git
 To run the game, navigate to the directory where the game is located and run the following command:
 
 ```bash
-$ g++ main.cpp -o main
-$ ./main
+$ # Build with g++
+$ g++ main.cpp rockpaperscissor.cpp -o rps
+$ ./rps
+
+# Or use the included Makefile (Unix/macOS / WSL / Git Bash)
+make
+make run
 ```
 
 ## How to Play

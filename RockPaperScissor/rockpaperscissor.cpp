@@ -1,10 +1,13 @@
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 #include "rockpaperscissor.hpp"
 
 using namespace std;
 
 RockPaperScissor::RockPaperScissor() {
+    // Seed RNG so computer choice differs across runs
+    std::srand(static_cast<unsigned int>(std::time(nullptr)));
     choices[0] = 1;
     choices[1] = 2;
     choices[2] = 3;
